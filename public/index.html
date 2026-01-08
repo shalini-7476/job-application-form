@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="/submit" method="POST" enctype="multipart/form-data">
+
+
+<div class="page">
+
+  <div class="header">
+    <img src="logo.jpeg" alt="Logo">
+
+    <div class="company">
+      <h1>7S IQ PRIVATE LIMITED</h1>
+      <h2 class="form-title">Application Form</h2>
+    </div>
+
+    <div class="photo-box">
+      Paste Photo Here
+      <input type="file" name="photo">
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <td>Date of Application</td>
+      <td><input type="date" name="applicationDate"></td>
+      <td>Position</td>
+      <td><input type="text" name="position"></td>
+    </tr>
+
+    <tr>
+      <td>Employment Type</td>
+      <td colspan="3">
+        <div class="employment-type">
+          <label><input type="radio" name="employmentType" value="Full-Time"> Full-Time</label>
+          <label><input type="radio" name="employmentType" value="Course"> Course</label>
+          <label><input type="radio" name="employmentType" value="Intern"> Intern</label>
+        </div>
+      </td>
+    </tr>
+
+    <tr><td colspan="4" class="section">Personal Information</td></tr>
+    <tr><td>Full Name</td><td colspan="3"><input name="fullname"></td></tr>
+    <tr><td>Address</td><td colspan="3"><input name="address"></td></tr>
+    <tr>
+      <td>Phone</td><td><input name="phone"></td>
+      <td>Email</td><td><input name="email"></td>
+    </tr>
+    <tr>
+      <td>DOB</td><td><input type="date" name="dob"></td>
+      <td>Aadhar No</td><td><input name="aadhar"></td>
+    </tr>
+  </table>
+
+  <table>
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:30%">
+      <col style="width:15%">
+      <col style="width:15%">
+      <col style="width:20%">
+    </colgroup>
+
+    <tr><td colspan="5" class="section">Educational Background</td></tr>
+    <tr>
+      <th>Degree / Course</th>
+      <th>University / Institute</th>
+      <th>Year</th>
+      <th>Grade</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td><input name="degree" style="width: 110px;"></td>
+      <td><input name="institute"></td>
+      <td><input name="year" style="width: 100px;"></td>
+      <td><input name="grade" style="width: 100px;"></td>
+      <td><input name="city" style="width: 100px;"></td>
+    </tr>
+  </table>
+
+  <table>
+    <tr><td colspan="4" class="section">Employment History</td></tr>
+    <tr><th>Company</th><th>Position</th><th>Year</th><th>Reason</th></tr>
+    <tr>
+      <td><input name="company"></td>
+      <td><input name="positionHistory"></td>
+      <td><input name="yearHistory"></td>
+      <td><input name="reason"></td>
+    </tr>
+  </table>
+
+  <table>
+    <tr><td colspan="4" class="section">Skills & Training</td></tr>
+    <tr><th>Achievement</th><th>Level</th><th>Year</th><th>Institute</th></tr>
+    <tr>
+      <td><input name="achievement"></td>
+      <td><input name="level"></td>
+      <td><input name="yearSkill"></td>
+      <td><input name="skillInstitute"></td>
+    </tr>
+  </table>
+
+</div>
+
+
+<div class="page">
+
+  <div class="header">
+    <img src="logo.jpeg" alt="Logo">
+    <div class="company">
+      <h1>7S IQ PRIVATE LIMITED</h1>
+      <h2 class="form-title">Application Form</h2>
+    </div>
+    <div></div>
+  </div>
+
+  <table>
+    <tr><td colspan="3" class="section">Family Details</td></tr>
+    <tr><th>Name</th><th>Relationship</th><th>Occupation</th></tr>
+    <tr>
+      <td><input name="familyName"></td>
+      <td><input name="familyRelation"></td>
+      <td><input name="familyOccupation"></td>
+    </tr>
+  </table>
+
+  <table>
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:20%">
+      <col style="width:20%">
+      <col style="width:20%">
+      <col style="width:20%">
+    </colgroup>
+
+    <tr><td colspan="5" class="section">Emergency Contact</td></tr>
+    <tr>
+      <th>Name</th>
+      <th>Relationship</th>
+      <th>Occupation</th>
+      <th>Qualification</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td><input name="emergencyName" style="width: 110px;"></td>
+      <td><input name="emergencyRelation" style="width: 110px;"></td>
+      <td><input name="emergencyOccupation" style="width: 110px;"></td>
+      <td><input name="emergencyQualification" style="width: 110px;"></td>
+      <td><input name="emergencyCity" style="width: 110px;"></td>
+    </tr>
+  </table>
+
+
+  <div style="text-align:center; margin-top:20px;">
+    <button type="submit">Submit Application</button>
+  </div>
+
+</div>
+
+</form>
+</body>
+</html>
+
+
